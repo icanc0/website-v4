@@ -24,4 +24,4 @@ _actual*.*
 _output
 /types
 .env
-.svelte-kit
+/.svelte-kit/
