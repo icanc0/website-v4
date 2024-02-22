@@ -16,7 +16,7 @@ import AmogusToggleSwitch from '$lib/AmogusToggleSwitch.svelte'
         <a href="/" class="px-3 py-2 bg-gray-900 font-bold text-gray-100 rounded-md">
             home
         </a>
-        <a href="/" class="px-3 py-2 bg-gray-800 hover:bg-gray-700 font-bold text-gray-100 rounded-md">
+        <a href="/blog" class="px-3 py-2 bg-gray-800 hover:bg-gray-700 font-bold text-gray-100 rounded-md">
             blog
         </a>
         <a href="/" class="px-3 py-2 bg-gray-800 hover:bg-gray-700 font-bold text-gray-100 rounded-md">
