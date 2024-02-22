@@ -1,4 +1,4 @@
-//this endpoint is going to return all data for a specific blog,
+//this endpoint is going to return all data for a specific blogs,
 //based on the slug
 
 import { readBlog } from '$lib/readBlog';

@@ -1,4 +1,4 @@
-//this endpoint is going to return all the paths of the blog, in order with date
+//this endpoint is going to return all the paths of the blogs, in order with date
 
 //fricking bug with vite, gonna fix this later
 import { promises as fs } from 'fs';
@@ -7,7 +7,7 @@ import type { BlogMeta } from '$lib/readBlog';
 import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = async () => {
-    const files = await fs.readdir('src/blog');
+    const files = await fs.readdir('src/blogs');
     const blogData: BlogMeta[] = [];
 
     for (const file of files) {
