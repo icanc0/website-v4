@@ -6,7 +6,6 @@ import type { PageServerLoad } from './$types';
 
 import { readPage } from "$lib/server/PageGeneration";
 import type { PageMeta } from "$lib/server/PageGeneration";
-import {base} from "$app/paths";
 
 export const load: PageServerLoad = async () => {
     const files = await fs.readdir( 'static/projects');

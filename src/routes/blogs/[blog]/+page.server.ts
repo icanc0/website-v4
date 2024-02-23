@@ -1,15 +1,13 @@
-//this endpoint is going to return all data for a specific blogs,
-//based on the slug
-
-import { readBlog } from '$lib/readBlog';
-import { processMarkdown } from '$lib/markdown';
+import { readPage } from '$lib/server/PageGeneration';
+import { processMarkdown } from '$lib/server/PageGeneration';
 import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = async ({ params }) => {
-    const { slug } = params;
-    console.log(slug);
-    let rawJSON = await readBlog(slug);
+
+    console.log(params.blog);
+
+    let rawJSON = await readPage(params.blog, 'blogs');
     rawJSON = await processMarkdown(rawJSON);
 
-    return { rawJSON };
+    return rawJSON
 };
