@@ -13,7 +13,6 @@ import remarkStringify from 'remark-stringify';
 import { matter } from 'vfile-matter';
 import { VFile } from 'vfile';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
 import rehypeWrap from 'rehype-wrap';
 
 export type PageOption = "blogs" | "projects";

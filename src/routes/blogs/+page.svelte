@@ -4,7 +4,7 @@
 
 <div class="w-full pt-4 px-2 sm:px-6">
     <div class="flex flex-col space-y-3  w-full">
-        {#each data as blog}
+        {#each data.blogData as blog}
             <a href="blog/{blog.path}" id="blogCard"
                class="flex flex-row bg-lmao-yellow dark:bg-gray-600 rounded-3xl p-3">
                 <div class="flex flex-col justify-center items-center flex-shrink-0">

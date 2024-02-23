@@ -9,16 +9,16 @@ import type { PageMeta } from "$lib/server/PageGeneration";
 import {base} from "$app/paths";
 
 export const load: PageServerLoad = async () => {
-    const files = await fs.readdir( 'static/blogs');
+    const files = await fs.readdir( 'static/projects');
     const blogData: PageMeta[] = [];
 
     for (const file of files) {
         const fileNoExtension = file.substring(0, file.lastIndexOf('.'));
-        blogData.push(await readPage(fileNoExtension, 'blogs'));
+        blogData.push(await readPage(fileNoExtension, 'projects'));
     }
 
     //sorts from biggest to smallest based on unix date
     blogData.sort((a: { unixDate: number }, b: { unixDate: number }) => b.unixDate - a.unixDate);
 
-    return {blogData: blogData}
+    return {blogData: blogData};
 };
