@@ -18,5 +18,5 @@ export const load: PageServerLoad = async () => {
     //sorts from biggest to smallest based on unix date
     blogData.sort((a: { unixDate: number }, b: { unixDate: number }) => b.unixDate - a.unixDate);
 
-    return { blogData: blogData };
+    return blogData;
 };

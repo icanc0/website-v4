@@ -4,7 +4,7 @@ import GithubCard from '$lib/GithubCard.svelte';
 
 import { fly } from 'svelte/transition'
 let counter = 0
-let names = ['Vincent Xie', 'Amogus', 'Wanky Zee', 'Amogus Guy 2']
+let names = ['Vincent Xie', 'icanc (on the internet)']
 
 function increment() {
     if (counter < names.length - 1) {
@@ -33,7 +33,7 @@ console.log(data)
                     {names[counter]}
                 </div>
                 <div class="text-md text-gray-600">
-                    The amogus master
+                    Searching for jobs...
                 </div>
                 <div class="flex flex-row">
                     <div class="bg-gradient-to-r from-purple-400 to-blue-400 py-4 px-8 rounded-xl text-white font-bold">
@@ -91,6 +91,5 @@ console.log(data)
 
         </div>
     </div>
-
 
 </div>
